@@ -1,0 +1,4 @@
+install dev packages
+pipenv install --dev "flake8>=3.9.2,<3.10"
+docker build --build-arg DEV=true -t myapp-dev .
+docker-compose run --rm app sh -c ""
